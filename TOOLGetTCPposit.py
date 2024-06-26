@@ -9,7 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'lib64'))
 from lib64 import jkrc
 PI = 3.1415926
 
-robot = jkrc.RC("192.168.0.77")
+robot = jkrc.RC("10.5.5.100")
 ret = robot.login()
 ret = robot.get_tcp_position()
 if ret[0] == 0:

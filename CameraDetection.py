@@ -4,12 +4,12 @@ import torch
 # Load the model
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='C:/Users/Cutshion/Desktop/ReposDesktop/spin/yolov5/runs/train/exp3/weights/best.pt')
 # Open the webcam
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 while True:
     # Capture frame-by-frame
     ret, frame = cap.read()
-
+ 
     # Determine the new width (e.g., half of the original width)
     original_width = frame.shape[1]
     new_width = original_width // 6
